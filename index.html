@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>07 JavaScript If Statements</title>
+</head>
+<body>
+    <div class="container-sm">
+        <div class="row">
+            <div class="col"><img src="images/Screenshot1.png" alt="" srcset=""></div>
+            <div class="col">
+                x: <input type="text" name="val" id="val" placeholder="input x:">
+                <button class="btn btn-primary" onclick="num1()">Calculate</button>
+            </div>
+            <div class="col">
+                <p id="result1"></p>
+            </div>
+        </div>
+    </div>
+    <div class="container-sm" style="margin-top: 50px;">
+        <div class="row align-items-center">
+            <div class="col"><img src="images/Screenshot2.png" alt="" srcset=""></div>
+            <div class="col-10">
+                <form action="#">
+                    x: <input type="text" name="x" id="x" placeholder="input x:">
+                    y: <input type="text" name="y" id="y" placeholder="input y:">
+                    <button type="button" class="btn btn-primary" onclick="num2()">Calculate</button>
+                    <button type="reset" class="btn btn-danger">Reset</button>
+                    <p id="result2"></p>
+                </form>
+        </div>
+    </div>
+    <div class="container-sm" style="margin-top: 50px; ">
+        <form action="#" method="get">
+            Введите кол-во рублей <input type="text" name="val2" id="val2">
+            <button type="button" class="btn btn-primary" onclick="num3()">Submit</button>
+            <button type="reset" class="btn btn-danger">Reset</button>
+            <p id="result3"></p>
+        </form>
+    </div>
+    <div class="container-sm">
+        <form action="#">
+            <h1>Вопрос 1</h1>
+            <p>Вопрос. Какой тэг HTML служит для создания таблицы?</p>
+            <input type="radio" name="radio" id="radio-correct">TABLE <br>
+            <input type="radio" name="radio" id="radio">HR <br>
+            <input type="radio" name="radio" id="radio">LINE <br>
+            <input type="radio" name="radio" id="radio">ROW 
+            <h1>Вопрос 2</h1>
+            <p>Вопрос. Какой параметр служит для установки цвета текста на Web-странице?</p>
+            <input type="checkbox" id="checkbox-correct-1"> COLOR в тэге FONT <br>
+            <input type="checkbox" id="checkbox-correct-2"> COLOR в тэге BODY <br>
+            <input type="checkbox" id="checkbox-incorrect-3"> TEXT в тэге BODY <br>
+            <input type="checkbox" id="checkbox-incorrect-4"> TEXT в тэге FONT
+            <h1>Вопрос 3</h1>
+            <p>Вопрос. Какой тэг HTML служит для связывания файла CSS-стилей и Web-страницы?</p>
+            <select id="select1">
+                <option value="1">URL</option>
+                <option value="2">LINK</option>
+                <option value="3">SRC</option>
+                <option value="4">HEAD</option>
+            </select>
+            <h1>Вопрос 4</h1>
+            <p>Вопрос. Какой параметр не предназначен для установки цвета текста на Web-странице?</p>
+            <select id="select2" multiple>
+                <option value="1">COLOR в тэге FONT</option>
+                <option value="2">COLOR в тэге BODY</option>
+                <option value="3">TEXT в тэге BODY</option>
+                <option value="4">TEXT в тэге FONT</option>
+            </select>
+            <h1>Вопрос 5</h1>
+            <p>Вопрос. Какой тег HTML служит для создания формы?</p>
+            <input type="text" name="vop5" id="vop5"><br>
+            <button type="button" class="btn btn-primary" onclick="num4()">Submit</button>
+            <button type="reset" class="btn btn-danger">Reset</button>
+            <p id="result4"></p>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
